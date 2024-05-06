@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/start.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- jQuery UI Datepicker -->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <!-- jQuery Timepicker -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-timepicker/1.10.0/jquery.timepicker.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-timepicker/1.10.0/jquery.timepicker.min.js"></script>
+
+    <title>Start | EventEase</title>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <h2>EventEase</h2>
+            <p>Click create to start.</p>
+        </div>
+        <ul class="sidebar-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Event Storage</a></li>
+            <li><a href="#">Upcoming</a></li>
+            <li><a href="#">Trash</a></li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <button class="btn_card" onclick="openModal()">
+            <img class="add" src="./images/add.png" alt="icon" width="60px" height="60px">
+            <div class="container">
+                <h4><b>CREATE</b></h4> 
+            </div>
+        </button>
+    </div>
+
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Create your events with EventEase</h2>
+        
+            <form>
+                <label for="eventTitle"></label>
+                <input type="text" id="eventTitle" name="eventTitle" placeholder="Title of Event" required><br>
+                <label for="eventDate"></label>
+                <input type="text" id="eventDate" name="eventDate" placeholder="Date of Event" required><br>
+                <label for="eventTime"></label>
+                <input type="text" id="eventTime" name="eventTime" placeholder="Time of Event" required><br>
+                <label for="eventImage"></label>
+                <input type="file" id="eventImage" name="eventImage" accept="image/*" required><br><br>
+                <img id="previewImage" src="#" alt="Preview" style="display: none; max-width: 100%;"><br>
+                <button type="button" onclick="previewImage()">Preview Image</button>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="./js/script_start.js"></script>
+
+      
+    
+    
+    <script src="./js/script_start.js"></script>
+    
+</body>
+</html>

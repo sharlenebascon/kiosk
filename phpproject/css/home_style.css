@@ -1,0 +1,108 @@
+*{
+    margin: 0%;;
+    padding: 0;
+}
+
+.home {
+    height:1000px;
+    width: 100%;
+    background:linear-gradient(0deg, rgba(83, 80, 80, 0.3), rgba(77, 74, 74, 0.3)), url("../images/bg-irri.png");
+    background-size:cover;
+}
+
+.title{
+    color: white;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.title> h1{
+    position: relative;
+    font-size: 200px;
+    top: 200px;
+    animation: fadeIn 3s forwards; 
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0; /* Start with opacity 0 */
+    }
+    to {
+        opacity: 1; /* Fade in to full opacity */
+    }
+}
+
+.title> p{
+    position: relative;
+    font-size: 50px;
+    top: 200px;
+}
+
+.card {
+    display: inline-block;
+    text-decoration: none;
+    background-color: white;
+    border-radius: 12px;
+    padding: 25px 70px;
+    cursor: pointer;
+    margin-top: 250px;
+    color: #095d40;
+    font-weight: bolder;
+    transition: background-color 0.3s;
+}
+
+.card:hover {
+    background-color: rgba(255, 255, 255, 0.8); /* Change background color on hover */
+}
+
+.home > img{
+    position: relative;
+    top: 10px;
+    left: 10px;
+}
+
+.about>img{
+    width: 100%;
+    height: auto;
+}
+
+.about > h1{
+    position: relative;
+    top: -900px;
+    text-align: center;
+    color: white;
+    font-size: 80px;   
+
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 25%;
+    padding: 10px;
+    color: white;
+    margin: 10px;
+    margin-left: 100px;
+    height: 300px; /* Should be removed. Only for demonstration */
+  }
+  
+  .row{
+    position: relative;
+    bottom: 600px;
+
+  }
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .column > p{
+    text-align: justify;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 20px;
+    margin-top: 15px;
+
+  }
